@@ -31,6 +31,9 @@
     --sec-800: #0039e4;
     --sec-900: #0026b0;
     --sec-950: #000c40;
+
+    --over-1 : #783124;
+    --over-2 : #ee8d7b;
 }
 
 body {
@@ -152,7 +155,7 @@ main {
     transition : height 2000ms, width 2000ms, background-size 2000ms, background-position-x 2000ms, background-color 2000ms, z-index 1000ms;
 }
 
-#case-1:hover {
+#case-1:active {
     
     height : 90vh;
     width : 95.6vh;
@@ -179,10 +182,10 @@ main {
     background-position-x: 100%;
     background-position-y:50%;
 
-    transition : height 2000ms, width 2000ms, background-size 2000ms, background-position-x 2000ms, background-color 2000ms, top 2000ms, z-index 1000ms;
+    transition : height 2000ms, width 2000ms, background-size 2000ms, background-position-x 2000ms,background-position-y 2000ms,background-color 2000ms, top 2000ms, z-index 1000ms;
 }
 
-#case-2:hover {
+#case-2:active {
     top : 2vh;
     height : 48.5vw;
     width : 66vw;
@@ -211,7 +214,7 @@ main {
     transition : height 2000ms, width 2000ms, background-size 2000ms, background-position-x 2000ms, background-position-y 2000ms, background-color 2000ms, z-index 1000ms;
 }
 
-#case-3:hover {
+#case-3:active {
     height : 78vh;
     width : 69.3vh;
     background-size: 69.3vh 80vh;
@@ -239,7 +242,7 @@ main {
     transition : height 2000ms, width 2000ms, background-size 2000ms, background-position-x 2000ms, background-position-y 2000ms, background-color 2000ms, z-index 1000ms, bottom 2000ms, right 2000ms;
 }
 
-#case-4:hover {
+#case-4:active {
     bottom : 0;
     right : 0;
 
@@ -271,7 +274,7 @@ main {
     transition : height 2000ms, width 2000ms, background-size 2000ms, background-position-x 2000ms, background-position-y 2000ms, background-color 2000ms, z-index 1000ms, bottom 2000ms, right 2000ms;
 }
 
-#case-5:hover {
+#case-5:active {
     height :78vh;
     width : 54.2vh;
 
@@ -300,7 +303,7 @@ main {
     transition : height 2000ms, width 2000ms, background-size 2000ms, background-position-x 2000ms, background-position-y 2000ms, background-color 2000ms, z-index 1000ms;
 }
 
-#case-6:hover {
+#case-6:active {
     height : 90vh;
     width : 45vh;
     background-size: 45vh 90vh;
@@ -311,4 +314,68 @@ main {
 
 }
 
+/*over cases*/
 
+#ocase-1 {
+    position: absolute;
+    top : 30vh;
+    left : 25vw;
+    z-index: 3;
+
+    height: 10vh;
+    width : 20vw;
+
+    background-color: var(--prim-950);
+    background-image: url("../src/BritannyD.png");
+    background-repeat: no-repeat;
+    background-size: 50vw 73.3vw;
+    background-position-x: 98%;
+    background-position-y:30%;
+
+    transition : height 2000ms, width 2000ms, background-size 2000ms, background-position-x 2000ms, background-position-y 2000ms, background-color 2000ms, z-index 1000ms, top 2000ms, left 2000ms;
+
+}
+
+#ocase-1:hover {
+    top : 5vh;
+    left : 10vw;
+    z-index: 10;
+
+    height: 90vh;
+    width : 35vw;
+    background-position-y:22%;
+
+    background-color: var(--over-2);
+}
+
+
+#ocase-2 {
+    position: absolute;
+    bottom: 20vh;
+    right : 15vw;
+    z-index: 3;
+
+    height: 35vh;
+    width : 11vw;
+
+    background-color: var(--prim-950);
+    background-image: url("../src/femmeFatale.png");
+    background-repeat: no-repeat;
+    background-size: 88.2vh 80vh;
+    background-position-x: 80%;
+    background-position-y:20%;
+
+    transition : height 2000ms, width 2000ms, background-size 2000ms, background-position-x 2000ms, background-position-y 2000ms, background-color 2000ms, z-index 1000ms, bottom 2000ms, right 2000ms;
+}
+
+#ocase-2:hover {
+    bottom : 5vh;
+    right : 10vw;
+    z-index: 10;
+
+    height: 80vh;
+    width : 88.2vh;
+    background-position-y:16%;
+
+    background-color: var(--over-2);
+}
