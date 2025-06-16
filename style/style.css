@@ -19,21 +19,6 @@
     --prim-800: #625875;
     --prim-900: #50495f;
     --prim-950: #3d3846;
-
-    --sec-50: #e4f4ff;
-    --sec-100: #cfe9ff;
-    --sec-200: #a8d5ff;
-    --sec-300: #74b7ff;
-    --sec-400: #3e85ff;
-    --sec-500: #1354ff;
-    --sec-600: #0040ff;
-    --sec-700: #0040ff;
-    --sec-800: #0039e4;
-    --sec-900: #0026b0;
-    --sec-950: #000c40;
-
-    --over-1 : #783124;
-    --over-2 : #ee8d7b;
 }
 
 body {
@@ -44,7 +29,7 @@ body {
 header {
     /*background: #F0F2F0;  /* fallback for old browsers */
     /*background: -webkit-linear-gradient(to left, #000C40, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, var(--sec-950), var(--sec-950)50%, var(--prim-100)100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to left, var(--prim-900), var(--prim-900)50%, var(--prim-100)100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 20vh;
     border-bottom: var(--prim-950) solid 2px;
     
@@ -135,6 +120,8 @@ main {
     box-shadow: var(--prim-950) 2px 2px 4px 0;
     margin : 0.75vh 0.5vw;
     z-index: 1;
+
+    transition : height 2000ms, width 2000ms, background-size 2000ms, background-position-x 2000ms, background-position-y 2000ms, background-color 2000ms, z-index 1000ms, bottom 2000ms, right 2000ms, top 2000ms, left 2000ms;
 }
 
 #case-1 {  
@@ -151,8 +138,6 @@ main {
     background-size: 74.2vh 69.2vh;
     background-position-x: 95%;
     background-position-y:100%;
-
-    transition : height 2000ms, width 2000ms, background-size 2000ms, background-position-x 2000ms, background-color 2000ms, z-index 1000ms;
 }
 
 #case-1:active {
@@ -181,8 +166,6 @@ main {
     background-size: 36vw 26.4vw;
     background-position-x: 100%;
     background-position-y:50%;
-
-    transition : height 2000ms, width 2000ms, background-size 2000ms, background-position-x 2000ms,background-position-y 2000ms,background-color 2000ms, top 2000ms, z-index 1000ms;
 }
 
 #case-2:active {
@@ -210,8 +193,6 @@ main {
     background-size: 71.6vh 82.6vh;
     background-position-x: 60%;
     background-position-y:40%;
-
-    transition : height 2000ms, width 2000ms, background-size 2000ms, background-position-x 2000ms, background-position-y 2000ms, background-color 2000ms, z-index 1000ms;
 }
 
 #case-3:active {
@@ -239,7 +220,7 @@ main {
     background-position-x: 60%;
     background-position-y:100%;
 
-    transition : height 2000ms, width 2000ms, background-size 2000ms, background-position-x 2000ms, background-position-y 2000ms, background-color 2000ms, z-index 1000ms, bottom 2000ms, right 2000ms;
+    
 }
 
 #case-4:active {
@@ -270,8 +251,6 @@ main {
     background-size: 18vw 25.9vw;
     background-position-x: 100%;
     background-position-y:30%;
-
-    transition : height 2000ms, width 2000ms, background-size 2000ms, background-position-x 2000ms, background-position-y 2000ms, background-color 2000ms, z-index 1000ms, bottom 2000ms, right 2000ms;
 }
 
 #case-5:active {
@@ -299,8 +278,6 @@ main {
     background-size: 33.6vh 67.2vh;
     background-position-x: 100%;
     background-position-y:35%;
-
-    transition : height 2000ms, width 2000ms, background-size 2000ms, background-position-x 2000ms, background-position-y 2000ms, background-color 2000ms, z-index 1000ms;
 }
 
 #case-6:active {
@@ -325,15 +302,12 @@ main {
     height: 10vh;
     width : 20vw;
 
-    background-color: var(--prim-950);
+    background-color: var(--prim-100);
     background-image: url("../src/BritannyD.png");
     background-repeat: no-repeat;
     background-size: 50vw 73.3vw;
     background-position-x: 98%;
     background-position-y:30%;
-
-    transition : height 2000ms, width 2000ms, background-size 2000ms, background-position-x 2000ms, background-position-y 2000ms, background-color 2000ms, z-index 1000ms, top 2000ms, left 2000ms;
-
 }
 
 #ocase-1:hover {
@@ -345,7 +319,7 @@ main {
     width : 35vw;
     background-position-y:22%;
 
-    background-color: var(--over-2);
+    background-color: var(--prim-950);
 }
 
 
@@ -358,14 +332,12 @@ main {
     height: 35vh;
     width : 11vw;
 
-    background-color: var(--prim-950);
+    background-color: var(--prim-100);
     background-image: url("../src/femmeFatale.png");
     background-repeat: no-repeat;
     background-size: 88.2vh 80vh;
-    background-position-x: 80%;
-    background-position-y:20%;
-
-    transition : height 2000ms, width 2000ms, background-size 2000ms, background-position-x 2000ms, background-position-y 2000ms, background-color 2000ms, z-index 1000ms, bottom 2000ms, right 2000ms;
+    background-position-x: 41%;
+    background-position-y:5%;
 }
 
 #ocase-2:hover {
@@ -377,5 +349,5 @@ main {
     width : 88.2vh;
     background-position-y:16%;
 
-    background-color: var(--over-2);
+    background-color: var(--prim-950);
 }
